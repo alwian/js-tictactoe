@@ -26,7 +26,7 @@ for (let y = 0; y < boardSize; y++) {
 // Player Assignment.
 let humanPlayer;
 while (humanPlayer === undefined ||  (humanPlayer !== "X" && humanPlayer !== "O")) {
-    humanPlayer = prompt("Would you like to play as X or O?")
+    humanPlayer = prompt("Would you like to play as X or O?").toUpperCase();
 }
 let aiPlayer = humanPlayer === "O" ? "X" : "O";
 
